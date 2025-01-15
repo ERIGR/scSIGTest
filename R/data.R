@@ -1,0 +1,22 @@
+#' PBMC scRNAseq dataset : Preprocessed data (PBMC dataset) used as example for the package scSIGTest data
+#'
+#' @description
+#' Preprocessed data (PBMC dataset of  10X Genomics) used as example for the package scSIGTest. The object is a Seurat object storing the PBMC3k scRNAseq dataset. 
+#' The raw data were downloaded at this link : https://cf.10xgenomics.com/samples/cell/pbmc3k/pbmc3k_filtered_gene_bc_matrices.tar.gz
+#' After decompressing of the downloaded directory, data were treated using the code written in the function ProcessPBMC with Seurat (5.1.0)
+#' The md5sum of the file used are given below :
+#' ab58bb4e1a9d3a8f8d50bed54a806d05  barcodes.tsv
+#' 17e0ac5741a5830c8bc69576e3d5f844  genes.tsv
+#' e8e3b07963c966a1ac150de3d17dabae  matrix.mtx
+#'
+#' @import Seurat
+#'
+#' @format ##`processPBMC` ##
+#' An object of class Seurat of 12572 rows (features) and 2700 columns (cells). The meta.data slot of the object contains 12 columns. An already normalized matrix is available in this object. 
+#' 
+#' 
+#' @source <https://cf.10xgenomics.com/samples/cell/pbmc3k/pbmc3k_filtered_gene_bc_matrices.tar.gz> 
+#'
+#' @rdname processPBMC.rda
+#'
+"processPBMC"

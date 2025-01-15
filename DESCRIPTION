@@ -1,0 +1,19 @@
+Package: scSIGTest
+Type: Package
+Title: assess the status of cell for a set of genes provided by the user (global detection rate different to what is expected randomly)
+Version: 0.1.0
+Author: Elie Robert
+Maintainer: Elie Robert <elie.robert@gustaveroussy.fr>
+Description: Package containing a method to test the enrichment of a specific list of genes provided by the user in each cell of a scRNAseq dataset.
+    The method is based on the comparison of the number of genes detected in the signature as compared to the number of genes detected in a lot of random 
+    set of genes of the size of the interest gene list. The global detection rate of the gene list in each cell can be either significantly higher, lower 
+    or not different to what it is expected randomly.
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Imports: 
+    magrittr, chameleon, dplyr, ggplot2, purrr
+Depends:
+    R (>= 3.5),
+    Seurat
+License: Apache License (>= 2)
